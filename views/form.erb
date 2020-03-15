@@ -1,0 +1,47 @@
+<form action='/add' method='POST'>
+<div class='divStyle'>
+<label for = 'rName'> Name :</label>
+<input type='text' id='rName' name='rName' style="height:2.5em" class='inputStyle'>
+</div>
+<div class='divStyle'> 
+<label for='prepTime'> Prep Time :</label>
+<input type="number" name="prepTime" id="prepTime" style="height:2.5em" class='inputStyle'>
+</div>
+<div class='divStyle'>
+<label formethod='desc'> Description : </label>
+<textarea name="desc" id="desc" placeholder="Describe the Recipe" class='inputStyle'>Tasty !!</textarea>
+  
+</div>
+<div class='divStyle'>
+<label for='imageUrl'> Image Url :</label>
+<input type="url" name="imageUrl" id="imageUrl" style="height:2.5em" class='inputStyle'>
+</div>
+
+  <!-- input checkbox -->
+  <div class='divStyle'>
+    <fieldset>
+      <legend>Type</legend>
+
+      <label>
+        <input type="checkbox" name="type[]" value="vegan">
+        <span>Vegan</span>
+      </label>
+
+      <label>
+        <input type="checkbox" name="type[]" value="non">
+        <span>non-veg</span>
+      </label>
+
+      <label>
+        <input type="checkbox" name="type[]" value="kosher">
+        <span>Kosher</span>
+      </label>
+
+      <label>
+        <input type="checkbox" name="type[]" value="nutfree">
+        <span>Nut free</span>
+      </label>
+    </fieldset>
+  </div>
+  <input type='submit' class='submitRecipe' value= "Add Recipe">
+</form>
